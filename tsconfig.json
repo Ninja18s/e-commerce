@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "types": ["bcrypt"],
+    "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": "./src",
+    "paths": {
+      "@constants/*": ["shared/core/constants/*"],
+      "@setup/*": ["setup/*"],
+      "@infra/*": ["shared/infra/*"],
+      "@interfaces/*": ["shared/core/interfaces/*"],
+      "@utils/*": ["shared/core/utils/*"],
+      "@user/*": ["modules/user/*"],
+      "@product/*": ["modules/product/*"],
+      "@feedback/*": ["modules/feedback/*"],
+      "@order/*": ["modules/order/*"],
+    },
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/src/server.js",
+    "build": "rm -rf dist && tsc",
+    "dev": "concurrently \"tsc -w\" \"nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/mongoose": "^5.11.97",
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "joi": "^17.12.1",
+    "jsonwebtoken": "^9.0.2",
+    "libphonenumber-js": "^1.10.55",
+    "module-alias": "^2.2.3",
+    "mongoose": "^8.1.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.11.15",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "_moduleAliases": {
+    "@constants": "dist/src/shared/core/constants",
+    "@setup": "dist/src/setup",
+    "@interfaces": "dist/src/shared/core/interfaces",
+    "@infra": "dist/src/shared/infra",
+    "@utils": "dist/src/shared/core/utils",
+    "@user": "dist/src/modules/user",
+    "@product": "dist/src/modules/product",
+    "@feedback": "dist/src/modules/feedback",
+    "@order": "dist/src/modules/order"
+  }
+}
