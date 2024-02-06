@@ -54,7 +54,7 @@ npm start
 * [X] Add all the required filter as per user need.
 
 ---
-
+```
 Folder structure :-
     - src
         - modules
@@ -83,6 +83,7 @@ Folder structure :-
                 - utils ## common method 
                     - custom errors
             - infra 
-                - ## db models and repository will be there according to database    
+                - ## db models and repository will be there according to database
+```   
             
                  
